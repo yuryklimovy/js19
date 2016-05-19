@@ -1,0 +1,79 @@
+@import 'reset';
+@import "clearfix";
+$logo: '../img/logo.jpg';
+$colorLink: #248cec;
+$mainWidth: 1160px;
+$darkGreyBG: #2a2d32;
+$navBorderColor: #181a1d;
+
+body{
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+.header{
+  width: $mainWidth;
+  height: 53px;
+  margin: 0 auto;
+  margin-top: 35px;
+  background: url($logo) no-repeat;
+}
+.socials{
+  float: right;
+  margin-top: 20px;
+  margin-right: 2px;
+}
+.socials__item{
+  float: left;
+  margin-left: 20px;
+
+}
+.socials__link{
+  font-size: 17px;
+  color: #ccc;
+  :hover{
+    color: $colorLink;
+  }
+}
+.nav{
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  width: $mainWidth;
+  background: $darkGreyBG;
+}
+.nav__item{
+  float: left;
+  height: 56px;
+  width: 115px;
+  border-right: 1px solid $navBorderColor;
+  :hover{
+    color: #f4b60d;
+  }
+}
+.nav__link{
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.nav__textSearchField{
+  float: right;
+  margin: 8px;
+  width: 239px;
+  height: 38px;
+  border: 1px solid $navBorderColor;
+  background: #35383c;
+}
+
+.slider{
+  margin: 0 auto;
+  width: $mainWidth;
+
+}
