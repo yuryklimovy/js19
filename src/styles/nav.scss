@@ -1,0 +1,31 @@
+.nav {
+  margin: 30px auto 40px;
+  width: $mainWidth;
+  background: $darkGreyBG;
+}
+.nav__item {
+  float: left;
+  height: 56px;
+  width: 115px;
+  border-right: 1px solid $navBorderColor;
+  :hover {
+    color: #f4b60d;
+  }
+}
+.nav__link {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.nav__textSearchField {
+  float: right;
+  margin: 8px;
+  width: 239px;
+  height: 38px;
+  border: 1px solid $navBorderColor;
+  background: #35383c;
+}

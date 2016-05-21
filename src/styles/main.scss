@@ -1,10 +1,13 @@
-@import 'reset';
-@import "clearfix";
+
 $logo: '../img/logo.jpg';
 $colorLink: #248cec;
 $mainWidth: 1160px;
 $darkGreyBG: #2a2d32;
 $navBorderColor: #181a1d;
+
+@import 'reset';
+@import "clearfix";
+
 body {
   font-family: 'Ubuntu Condensed', sans-serif;
 }
@@ -12,130 +15,13 @@ body {
   width: 100%;
   height: 100%;
 }
-.header {
-  width: $mainWidth;
-  height: 53px;
-  margin: 35px auto 0;
-  background: url($logo) no-repeat;
-}
-.socials {
-  float: right;
-  margin-top: 20px;
-  margin-right: 2px;
-}
-.socials__item {
-  float: left;
-  margin-left: 20px;
-}
-.socials__link {
-  font-size: 17px;
-  color: #ccc;
-  &:hover {
-    color: $colorLink;
-  }
-}
-.nav {
-  margin: 30px auto 40px;
-  width: $mainWidth;
-  background: $darkGreyBG;
-}
-.nav__item {
-  float: left;
-  height: 56px;
-  width: 115px;
-  border-right: 1px solid $navBorderColor;
-  :hover {
-    color: #f4b60d;
-  }
-}
-.nav__link {
-  display: block;
-  font-size: 14px;
-  color: #fff;
-  text-decoration: none;
-  line-height: 56px;
-  text-align: center;
-  text-transform: uppercase;
-}
-.nav__textSearchField {
-  float: right;
-  margin: 8px;
-  width: 239px;
-  height: 38px;
-  border: 1px solid $navBorderColor;
-  background: #35383c;
-}
-.slider {
-  margin: 0 auto;
-  width: $mainWidth;
-}
-.features {
-  margin: 70px auto;
-  width: $mainWidth;
-}
-.feature {
-  width: 370px;
-  float: left;
-  margin-right: 15px;
-}
-.feature__count {
-  float: left;
-  width: 80px;
-  height: 200px;
-  margin-right: 40px;
-  font-size: 90px;
-  font-weight: 700;
-  color: #e9e9ea;
-}
-.feature__main {
-  float: left;
-  width: 240px;
-}
-.feature__ico {
-  width: 32px;
-  height: 32px;
-  margin-top: 10px;
-}
-.feature__ico1 {
-  @extend .feature__ico;
-  background: url('../img/settings.png') no-repeat;
-}
-.feature__ico2 {
-  @extend .feature__ico;
-  background: url('../img/params.png') no-repeat;
-}
-.feature__ico3 {
-  @extend .feature__ico;
-  background: url('../img/truck.png') no-repeat;
-}
-.feature__headline {
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: 700;
-}
-.feature__paragraf {
-  font: Arial;
-  margin-top: 25px;
-  font-size: 13px;
-  color: #8a8a8a;
-  line-height: 1.5;
-}
-.feature__link {
-  font-size: 13px;
-  font-weight: 700;
-  color: #2a2b2e;
-  display: block;
-  margin-top: 10px;
-  text-decoration: none;
-  i {
-    margin-left: 10px;
-    color: $colorLink;
-    font-size: 11px;
-  }
-  &:hover {
-    color: $colorLink;
-    i {
-      color: #8a8a8a;
-    }
-  }
-}
+
+@import "header";
+@import "nav";
+@import "slider";
+@import "feature";
+@import "service";
+@import "news";
+@import "logos";
+@import "links";
+@import "footer";

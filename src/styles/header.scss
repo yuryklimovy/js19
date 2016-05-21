@@ -1,0 +1,22 @@
+.header {
+  width: $mainWidth;
+  height: 53px;
+  margin: 35px auto 0;
+  background: url($logo) no-repeat;
+}
+.socials {
+  float: right;
+  margin-top: 20px;
+  margin-right: 2px;
+}
+.socials__item {
+  float: left;
+  margin-left: 20px;
+}
+.socials__link {
+  font-size: 17px;
+  color: #ccc;
+  &:hover {
+    color: $colorLink;
+  }
+}

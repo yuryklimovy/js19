@@ -1,0 +1,40 @@
+.links-wrapper{
+  @extend .services-wrapper;
+  height: 325px;
+}
+.links{
+  width: $mainWidth;
+  margin: 0 auto;
+}
+.links__block{
+  float: left;
+  width: 260px;
+  margin-top: 60px;
+  margin-right: 37px;
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.links__headline{
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+}
+.links__list{
+  margin-top: 40px;
+}
+.links__item{
+  width: 260px;
+  height: 35px;
+  border-bottom: 1px solid #393c40;
+}
+.links__link{
+  line-height: 40px;
+  font-size: 13px;
+  font-family: Arial sans-serif;
+  color: #828385;
+  text-decoration: none;
+  &:hover{
+    color: $colorLink;
+  }
+}

@@ -1,0 +1,22 @@
+.footer{
+  background: #35383c;
+}
+.footer__list{
+  width: $mainWidth;
+  margin: 0 auto;
+}
+.footer__item{
+  height: 60px;
+  margin-right: 40px;
+  line-height: 60px;
+  float: left;
+  font-family: Arial sans-serif;
+  font-size: 13px;
+  color: #686a6c;
+  &:last-child{
+    float: right;
+  }
+  i{
+    margin-right: 14px;
+  }
+}

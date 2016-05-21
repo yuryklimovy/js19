@@ -1,0 +1,70 @@
+.features {
+  margin: 70px auto;
+  width: $mainWidth;
+}
+.feature {
+  width: 370px;
+  float: left;
+  margin-right: 15px;
+}
+.feature__count {
+  float: left;
+  width: 80px;
+  height: 200px;
+  margin-right: 40px;
+  font-size: 90px;
+  font-weight: 700;
+  color: #e9e9ea;
+}
+.feature__main {
+  float: left;
+  width: 240px;
+}
+.feature__ico {
+  width: 32px;
+  height: 32px;
+  margin-top: 10px;
+}
+.feature__ico1 {
+  @extend .feature__ico;
+  background: url('../img/settings.png') no-repeat;
+}
+.feature__ico2 {
+  @extend .feature__ico;
+  background: url('../img/params.png') no-repeat;
+}
+.feature__ico3 {
+  @extend .feature__ico;
+  background: url('../img/truck.png') no-repeat;
+}
+.feature__headline {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.feature__paragraf {
+  font: Arial;
+  margin-top: 25px;
+  font-size: 13px;
+  color: #8a8a8a;
+  line-height: 1.5;
+}
+.feature__link {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2a2b2e;
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  i {
+    margin-left: 10px;
+    color: $colorLink;
+    font-size: 11px;
+  }
+  &:hover {
+    color: $colorLink;
+    i {
+      color: #8a8a8a;
+    }
+  }
+}
