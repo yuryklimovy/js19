@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>js19</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="js/script.js" charset="utf-8"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:500,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
@@ -11,7 +13,7 @@
 
 <body>
     <div class="wrapper">
-        <header class="header clearfix">
+        <header class="header clearfix" id="home">
             <div class="socials">
                 <ul class="socials__list">
                     <li class="socials__item"><a class="socials__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -22,13 +24,13 @@
                 </ul>
             </div>
         </header>
-        <nav class="nav clearfix">
+        <nav id="nav" class="nav default clearfix">
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Features</a></li>
+                <li class="nav__item"><a class="nav__link nav__link-active" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
                 <li class="nav__item"><a class="nav__link" href="#services">Services</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">News</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Shop</a></li>
+                <li class="nav__item"><a class="nav__link" href="#news">News</a></li>
+                <li class="nav__item"><a class="nav__link" href="1">Shop</a></li>
             </ul>
             <form class="nav__search" action="index.html" method="post">
                 <input type="text" name="name" value="" class="nav__textSearchField">
@@ -37,7 +39,7 @@
         <section class="slider">
             <img src="img/slider.jpg" alt="" />
         </section>
-        <section class="features clearfix">
+        <section class="features clearfix" id="features">
             <div class="feature">
                 <div class="feature__count">
                     01
@@ -92,8 +94,9 @@
                 </div>
             </div>
         </section>
-        <div class="services-wrapper">
-            <section class="services" id="services">
+        <div class="" id="services"></div>
+        <div class="services-wrapper" >
+            <section class="services clearfix">
                 <h2 class="services__headline">Our Services</h2>
                 <div class="service">
                     <img src="img/service1.jpg" alt="" />
@@ -113,9 +116,9 @@
                 </div>
                 </services>
         </div>
-        <div class="grey-wrapper">
-            <div class="news__wrapper clearfix">
-                <section class="news clearfix">
+        <div class="grey-wrapper" id="news">
+                  <div class="news__wrapper clearfix">
+                    <section class="news clearfix">
                     <h2 class="news__headline">Latest News</h2>
                     <div class="news__new clearfix">
                         <div class="news__img">
@@ -153,8 +156,60 @@
                             Cum sociis natoque penatibus et magnis dis parturient ontesmus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur samomo enim ipsam voluptatem.
                         </p>
                     </div>
+            </section>
+            <section class="banners">
+              <h2 class="banners__headline">Banners Place</h2>
+              <div class="accordion">
+                <h3 class="accordion__title">
+                  <span><i class="fa fa-plus" aria-hidden="true"></i></span>Accordion Panel 1
+                </h3>
+                <div class="accordion__content">
+                  Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel
+                  nibh et elit mollis commodo et nec augueique Nemo enim ipsam
+                  voluptatem quia ptas sit aspernatur momo. Cum sociis natoque
+                  penatibus et magnis dis parturient ontesmus. Nemo enim ipsam
+                  voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit
+                  mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                </div>
+                <h3 class="accordion__title">
+                    <span><i class="fa fa-plus" aria-hidden="true"></i></span>Accordion Panel 2
+                </h3>
+                <div class="accordion__content">
+                  Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel
+                  nibh et elit mollis commodo et nec augueique Nemo enim ipsam
+                  voluptatem quia ptas sit aspernatur momo. Cum sociis natoque
+                  penatibus et magnis dis parturient ontesmus. Nemo enim ipsam
+                  voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit
+                  mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                </div>
+                <h3 class="accordion__title">
+                    <span><i class="fa fa-plus" aria-hidden="true"></i></span>Accordion Panel 3
+                </h3>
+                <div class="accordion__content">
+                  Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel
+                  nibh et elit mollis commodo et nec augueique Nemo enim ipsam
+                  voluptatem quia ptas sit aspernatur momo. Cum sociis natoque
+                  penatibus et magnis dis parturient ontesmus. Nemo enim ipsam
+                  voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit
+                  mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                </div>
+                <h3 class="accordion__title">
+                    <span><i class="fa fa-plus" aria-hidden="true"></i></span>Accordion Panel 4
+                </h3>
+                <div class="accordion__content">
+                  Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel
+                  nibh et elit mollis commodo et nec augueique Nemo enim ipsam
+                  voluptatem quia ptas sit aspernatur momo. Cum sociis natoque
+                  penatibus et magnis dis parturient ontesmus. Nemo enim ipsam
+                  voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit
+                  mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur
+                </div>
+              </div>
             </div>
             </section>
+          </div>
+
+
         </div>
         <section class="logos"><img src="img/logos.png" alt="" /></section>
         <div class="links-wrapper">

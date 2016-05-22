@@ -1,8 +1,20 @@
-.nav {
+#nav.default {
+  background: $darkGreyBG;
   margin: 30px auto 40px;
   width: $mainWidth;
-  background: $darkGreyBG;
+  height: 56px;
 }
+#nav.fixed{
+  height: 56px;
+  position: fixed;
+  top:0;
+  left: 50%;
+  margin-left: -1*($mainWidth/2);
+  background: $darkGreyBG;
+  width: $mainWidth;
+  z-index: 9999;
+}
+
 .nav__item {
   float: left;
   height: 56px;
@@ -20,6 +32,9 @@
   line-height: 56px;
   text-align: center;
   text-transform: uppercase;
+}
+.nav__link-active{
+  background: $colorLink;
 }
 .nav__textSearchField {
   float: right;
