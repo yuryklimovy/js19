@@ -24,13 +24,12 @@ $(document).ready(function() {
 
   var $nav = $("#nav");
   var $navHeight = $nav.height();
+  var $link = $('.nav__link');
   var $featuresTop = $('#features').offset().top;
   var $servicesTop = $('#services').offset().top;
   var $newsTop = $('#news').offset().top;
-  var $link = $('.nav__link');
-
-
-  $(window).scroll(function() {
+  console.log($newsTop);
+    $(window).scroll(function() {
 
     if ($(this).scrollTop() > 100 && $nav.hasClass("default")) {
       $nav.removeClass("default").addClass("fixed");
@@ -38,22 +37,23 @@ $(document).ready(function() {
       $nav.removeClass("fixed").addClass("default");
     };
 
-    if ($(this).scrollTop() < $featuresTop) {
+    if ($(this).scrollTop() < $featuresTop - 148) {
       $link.removeClass('nav__link-active');
       $('a[href="#home"]').addClass('nav__link-active');
     };
 
-    if ($(this).scrollTop() >= $featuresTop - 182) {
+    if ($(this).scrollTop() >= $featuresTop - 148) {
       $link.removeClass('nav__link-active');
       $('a[href="#features"]').addClass('nav__link-active');
     };
 
-    if ($(this).scrollTop() >= $servicesTop - 182) {
+
+    if ($(this).scrollTop() >= $servicesTop - 148) {
       $link.removeClass('nav__link-active');
       $('a[href="#services"]').addClass('nav__link-active');
     };
 
-    if ($(this).scrollTop() >= $newsTop - 182) {
+    if ($(this).scrollTop() >= $newsTop - 148) {
       $link.removeClass('nav__link-active');
       $('a[href="#news"]').addClass('nav__link-active');
     };
@@ -64,10 +64,11 @@ $(document).ready(function() {
   $link.on('click', function(e) {
     e.preventDefault();
     var id = $(this).attr('href');
-    var top = $(id).offset().top - $navHeight;
+    var top = $(id).offset().top  - $navHeight;
     $('body,html').animate({
       scrollTop: top
     }, 800);
+    
   });
 
   //HOVER SERVICES
