@@ -4,17 +4,16 @@
   width: $mainWidth;
   height: 56px;
 }
-#nav.fixed{
+#nav.fixed {
   height: 56px;
   position: fixed;
-  top:0;
+  top: 0;
   left: 50%;
   margin-left: -1*($mainWidth/2);
   background: $darkGreyBG;
   width: $mainWidth;
   z-index: 9999;
 }
-
 .nav__item {
   float: left;
   height: 56px;
@@ -33,14 +32,28 @@
   text-align: center;
   text-transform: uppercase;
 }
-.nav__link-active{
+.nav__link-active {
   background: $colorLink;
 }
-.nav__textSearchField {
+.nav__search {
   float: right;
   margin: 8px;
   width: 239px;
   height: 38px;
   border: 1px solid $navBorderColor;
   background: #35383c;
+  i {
+    line-height: 36px;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 11px;
+    color: #5d5f62;
+  }
+}
+.nav__textSearchField {
+  width: 189px;
+  height: 33px;
+  color: #5d5f62;
+  background: #35383c;
+  border: none;
 }

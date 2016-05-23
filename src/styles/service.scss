@@ -12,9 +12,23 @@
   float: left;
   width: 260px;
   margin-right: 40px;
+  position: relative;
   &:last-child{
     margin-right: 0;
   }
+
+
+}
+.hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+
+}
+.hover-active{
+  opacity: 1;
 }
 .services__headline{
   margin: 42px 0;
@@ -24,7 +38,7 @@
 }
 .service__link{
   display: block;
-  margin-top: 30px;
+  margin-top: 35px;
   font-size: 16px;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -32,4 +46,9 @@
   &:hover{
     color: #f4b60d;
   }
+
+
+}
+.service__link-hover{
+  color: #f4b60d;
 }
